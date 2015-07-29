@@ -1,3 +1,6 @@
+# Copyright (c) 2015 Calinou - MIT license
+# See LICENSE.md for more information.
+
 extends KinematicBody2D
 
 var rotation = -0.3
@@ -23,5 +26,5 @@ func _fixed_process(delta):
 	else:
 		rotation -= 0.06
 		sound_to_play = true
-	
+
 	get_node(".").set_rot(rotation)
