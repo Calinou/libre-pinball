@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="4" version="1.1" version_name="Godot Engine v1.1.stable.custom_build">
-	<ext_resource path="res://scripts/ball.gd" type="Script"></ext_resource>
-	<ext_resource path="res://media/images/ball.png" type="Texture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="3" version="1.1" version_name="Godot Engine v1.1.stable.custom_build">
+	<ext_resource path="res://scripts/bumper_small.gd" type="Script"></ext_resource>
 	<resource type="CircleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<real name="radius"> 10 </real>
+		<real name="radius"> 20 </real>
 
 	</resource>
 	<main_resource>
@@ -14,57 +13,69 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="32">
-				<string> "Ball" </string>
+			<string_array  len="44">
+				<string> "Bumper" </string>
 				<string> "Node2D" </string>
 				<string> "__meta__" </string>
-				<string> "RigidBody2D" </string>
+				<string> "StaticBody2D" </string>
 				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
 				<string> "collision/layers" </string>
 				<string> "collision/mask" </string>
-				<string> "mode" </string>
-				<string> "mass" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
 				<string> "friction" </string>
 				<string> "bounce" </string>
-				<string> "gravity_scale" </string>
-				<string> "custom_integrator" </string>
-				<string> "continuous_cd" </string>
-				<string> "contacts_reported" </string>
-				<string> "contact_monitor" </string>
-				<string> "sleeping" </string>
-				<string> "can_sleep" </string>
-				<string> "velocity/linear" </string>
-				<string> "velocity/angular" </string>
-				<string> "damp_override/linear" </string>
-				<string> "damp_override/angular" </string>
 				<string> "script/script" </string>
-				<string> "Sprite" </string>
-				<string> "transform/scale" </string>
-				<string> "texture" </string>
+				<string> "Polygon2D" </string>
+				<string> "polygon" </string>
+				<string> "uv" </string>
+				<string> "color" </string>
+				<string> "offset" </string>
+				<string> "texture/texture" </string>
+				<string> "texture/offset" </string>
+				<string> "texture/scale" </string>
+				<string> "texture/rotation" </string>
+				<string> "invert/enable" </string>
+				<string> "invert/border" </string>
 				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
 				<string> "trigger" </string>
+				<string> "SamplePlayer" </string>
+				<string> "config/voices" </string>
+				<string> "config/samples" </string>
+				<string> "default/volume_db" </string>
+				<string> "default/pitch_scale" </string>
+				<string> "default/pan" </string>
+				<string> "default/depth" </string>
+				<string> "default/height" </string>
+				<string> "default/filter/type" </string>
+				<string> "default/filter/cutoff" </string>
+				<string> "default/filter/resonance" </string>
+				<string> "default/filter/gain" </string>
+				<string> "default/reverb_room" </string>
+				<string> "default/reverb_send" </string>
+				<string> "default/chorus_send" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 4 </int>
+			<int> 5 </int>
 			<string> "nodes" </string>
-			<int_array  len="82"> 				-1, -1, 1, 0, -1, 1, 2, 0, 0, 0, 0, 3, 3, -1, 22, 4, 1, 5, 2, 6, 3, 7, 1, 8, 4, 9, 4, 10, 5, 11, 6, 12, 6, 13, 7, 14, 8, 15, 1, 16, 5, 17, 5, 18, 1, 19, 1, 20, 9, 21, 10, 22, 11, 23, 12, 24, 12, 25, 13, 0, 1, 0, 26, 26, -1, 2, 27, 14, 28, 15, 0, 1, 0, 29, 29, -1, 2, 30, 2, 31, 1, 0 </int_array>
+			<int_array  len="111"> 				-1, -1, 1, 0, -1, 1, 2, 0, 0, 0, 0, 3, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 1, 8, 4, 9, 4, 10, 5, 11, 6, 12, 6, 13, 7, 14, 8, 0, 1, 0, 15, 15, -1, 10, 16, 9, 17, 10, 18, 11, 19, 5, 20, 12, 21, 5, 22, 13, 23, 6, 24, 1, 25, 14, 0, 1, 0, 26, 26, -1, 2, 27, 2, 28, 1, 0, 1, 0, 29, 29, -1, 14, 30, 4, 31, 12, 32, 6, 33, 7, 34, 6, 35, 6, 36, 6, 37, 15, 38, 15, 39, 15, 40, 15, 41, 16, 42, 6, 43, 6, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="16" shared="false">
+			<array  len="17" shared="false">
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -357.643, -213.297 </vector2>
+							<vector2> -135.615, -85.0411 </vector2>
 							<string> "snap_grid" </string>
-							<bool> False </bool>
+							<bool> True </bool>
 							<string> "snap_offset" </string>
 							<vector2> 0, 0 </vector2>
 							<string> "snap_pixel" </string>
@@ -78,11 +89,11 @@
 							<string> "snap_rotation_step" </string>
 							<real> 0.261799 </real>
 							<string> "snap_show_grid" </string>
-							<bool> False </bool>
+							<bool> True </bool>
 							<string> "snap_step" </string>
-							<vector2> 10, 10 </vector2>
+							<vector2> 4, 4 </vector2>
 							<string> "zoom" </string>
-							<real> 1.458955 </real>
+							<real> 4.65899 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -187,19 +198,19 @@
 				</dictionary>
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
 				<int> 1 </int>
-				<int> 0 </int>
-				<real> 1 </real>
-				<real> 0.25 </real>
-				<real> 4 </real>
-				<bool> True </bool>
 				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
-				<real> -1 </real>
-				<resource  resource_type="Script" path="res://scripts/ball.gd">  </resource>
-				<vector2> 0.15, 0.15 </vector2>
-				<resource  resource_type="Texture" path="res://media/images/ball.png">  </resource>
+				<real> 1 </real>
+				<resource  resource_type="Script" path="res://scripts/bumper_small.gd">  </resource>
+				<vector2_array  len="20"> 					0, 20, 4, 20, 12, 16, 16, 12, 20, 4, 20, 0, 20, -4, 16, -12, 12, -16, 4, -20, 0, -20, -4, -20, -12, -16, -16, -12, -20, -4, -20, 0, -20, 4, -16, 12, -12, 16, -4, 20 </vector2_array>
+				<vector2_array  len="0"> 					 </vector2_array>
+				<color> 1, 1, 0.25098, 1 </color>
+				<resource name=""></resource>				<vector2> 1, 1 </vector2>
+				<real> 100 </real>
+				<nil>  </nil>
+				<int> 2 </int>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
