@@ -84,7 +84,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -392, -96.5451 </vector2>
+							<vector2> -465.6, -16.076 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
@@ -104,7 +104,7 @@
 							<string> "snap_step" </string>
 							<vector2> 32, 32 </vector2>
 							<string> "zoom" </string>
-							<real> 1 </real>
+							<real> 1.227738 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -140,9 +140,9 @@
 									<string> "use_orthogonal" </string>
 									<bool> False </bool>
 									<string> "x_rot" </string>
-									<real> 0.3 </real>
+									<real> 0.325 </real>
 									<string> "y_rot" </string>
-									<real> 3.100002 </real>
+									<real> 1.424998 </real>
 								</dictionary>
 								<dictionary  shared="false">
 									<string> "distance" </string>
