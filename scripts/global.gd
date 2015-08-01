@@ -7,4 +7,4 @@ func _ready():
 	# 125 FPS physics:
 	OS.set_iterations_per_second(125)
 
-	print("Libre Pinball [0.0.1]")
+	print("Libre Pinball [0.0.2]")
