@@ -9,3 +9,9 @@ sounds/paddle.wav, sounds/launcher.wav
 
 - Copyright (c) 2015 The Red Eclipse Team
 - CC BY-SA 3.0 Unported
+
+fonts/FiraSans-Regular.otf
+--------------------------
+
+- Copyright (c) 2015 Carrois Type Design GbR
+- SIL OFL 1.1
