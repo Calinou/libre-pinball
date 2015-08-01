@@ -5,11 +5,12 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 3 </int>
+			<int> 2 </int>
 			<string> "conns" </string>
-			<int_array  len="18"> 				1, 0, 20, 19, 2, 0, 1, 0, 20, 21, 2, 0, 2, 0, 20, 22, 2, 0 </int_array>
+			<int_array  len="12"> 				1, 0, 21, 20, 2, 0, 2, 0, 21, 22, 2, 0 </int_array>
 			<string> "names" </string>
 			<string_array  len="23">
+				<string> "Main Menu" </string>
 				<string> "Control" </string>
 				<string> "margin/right" </string>
 				<string> "margin/bottom" </string>
@@ -19,7 +20,7 @@
 				<string> "size_flags/vertical" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "Play" </string>
+				<string> "Play Button" </string>
 				<string> "Button" </string>
 				<string> "margin/left" </string>
 				<string> "margin/top" </string>
@@ -28,16 +29,15 @@
 				<string> "toggle_mode" </string>
 				<string> "text" </string>
 				<string> "flat" </string>
-				<string> "Quit" </string>
-				<string> "_on_Play_pressed" </string>
+				<string> "Quit Button" </string>
+				<string> "_on_Play_Button_pressed" </string>
 				<string> "pressed" </string>
-				<string> "_on_Button_pressed" </string>
-				<string> "_on_Quit_pressed" </string>
+				<string> "_on_Quit_Button_pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
 			<int> 3 </int>
 			<string> "nodes" </string>
-			<int_array  len="89"> 				-1, -1, 0, 0, -1, 8, 1, 0, 2, 0, 3, 1, 4, 2, 5, 3, 6, 3, 7, 4, 8, 5, 0, 0, 0, 10, 9, -1, 13, 11, 6, 12, 7, 1, 8, 2, 9, 13, 10, 3, 1, 4, 2, 5, 3, 6, 3, 14, 11, 15, 1, 16, 12, 17, 1, 0, 0, 0, 10, 18, -1, 13, 11, 6, 12, 13, 1, 8, 2, 14, 13, 15, 3, 1, 4, 2, 5, 3, 6, 3, 14, 11, 15, 1, 16, 16, 17, 1, 0 </int_array>
+			<int_array  len="89"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 13, 12, 6, 13, 7, 2, 8, 3, 9, 14, 10, 4, 1, 5, 2, 6, 3, 7, 3, 15, 11, 16, 1, 17, 12, 18, 1, 0, 0, 0, 11, 19, -1, 13, 12, 6, 13, 13, 2, 8, 3, 14, 14, 15, 4, 1, 5, 2, 6, 3, 7, 3, 15, 11, 16, 1, 17, 16, 18, 1, 0 </int_array>
 			<string> "variants" </string>
 			<array  len="17" shared="false">
 				<real> 40 </real>
@@ -47,7 +47,7 @@
 				<resource  resource_type="Script" path="res://scripts/main_menu.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
@@ -176,15 +176,15 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<real> 64 </real>
-				<real> 128 </real>
-				<real> 288 </real>
+				<real> 96 </real>
+				<real> 224 </real>
 				<real> 256 </real>
+				<real> 288 </real>
 				<string> "play_tooltip" </string>
 				<resource  resource_type="Font" path="res://resources/fira_sans.fnt">  </resource>
 				<string> "play" </string>
-				<real> 320 </real>
-				<real> 448 </real>
+				<real> 352 </real>
+				<real> 416 </real>
 				<string> "quit_tooltip" </string>
 				<string> "quit" </string>
 			</array>

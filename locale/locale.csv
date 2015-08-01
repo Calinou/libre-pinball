@@ -3,3 +3,6 @@ play,Play,Jouer
 play_tooltip,Click to play.,Cliquez pour jouer.
 quit,Quit,Quitter
 quit_tooltip,Quits the game.,Quitte le jeu.
+pause,Pause,Pause
+resume,Resume,Continuer
+resume_tooltip,Resumes the game.,Continue la partie.

@@ -1,13 +1,13 @@
+# Copyright (c) 2015 Calinou - MIT license
+# See LICENSE.md for more information.
+
 extends Control
 
 func _ready():
 	print("Main menu loaded.")
 
-func _on_Play_pressed():
+func _on_Play_Button_pressed():
 	get_tree().change_scene("res://scenes/table_1.xml")
 
-func _on_Quit_pressed():
-	get_tree().quit()
-
-func _on_Language_item_selected(ID):
-	TranslationServer.set_locale(ID)
+func _on_Quit_Button_pressed():
+	get_node("/root/Global").quit()
