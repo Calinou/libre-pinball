@@ -23,6 +23,10 @@ func _input(event):
 func table_window_title(name):
 	OS.set_window_title(name + " - Libre Pinball")
 
+func reset_game_state():
+	score = -700
+	lives = 3
+
 func pause():
 	get_tree().set_pause(true)
 	get_node("/root/Table 1/Pause Menu").show()
@@ -37,9 +41,9 @@ func quit():
 func restart():
 	get_tree().reload_current_scene()
 	resume()
-	score = -700
-	lives = 3
+	reset_game_state()
 
 func go_to_main_menu():
 	get_tree().change_scene("res://scenes/main_menu.xml")
 	resume()
+	reset_game_state()
