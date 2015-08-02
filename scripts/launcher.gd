@@ -7,6 +7,7 @@ extends KinematicBody2D
 var pos_x
 var pos_y
 var sound_to_play = true
+var push = 0
 
 func _ready():
 	set_process_input(true)
@@ -16,8 +17,18 @@ func _ready():
 	pos_y = get_pos().y
 
 func _fixed_process(delta):
+	if push >= 4:
+		push = 4
+	if push <= -4:
+		push = -4
+	
 	if Input.is_action_pressed("use_launcher"):
-		set_pos(Vector2(pos_x, pos_y - 8))
+		push += 4
+		set_pos(Vector2(pos_x, pos_y - push))
 		if sound_to_play:
 			get_node("SamplePlayer").play("launcher")
 		sound_to_play = false
+	else:
+		push -= 4
+		set_pos(Vector2(pos_x, pos_y - push))
+		sound_to_play = true

@@ -7,9 +7,9 @@
 			<string> "conn_count" </string>
 			<int> 2 </int>
 			<string> "conns" </string>
-			<int_array  len="12"> 				2, 0, 33, 32, 2, 0, 3, 0, 33, 34, 2, 0 </int_array>
+			<int_array  len="12"> 				2, 0, 35, 34, 2, 0, 3, 0, 35, 36, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="35">
+			<string_array  len="37">
 				<string> "Main Menu" </string>
 				<string> "Control" </string>
 				<string> "margin/right" </string>
@@ -25,6 +25,8 @@
 				<string> "margin/left" </string>
 				<string> "margin/top" </string>
 				<string> "custom_fonts/font" </string>
+				<string> "custom_colors/font_color" </string>
+				<string> "custom_colors/font_color_shadow" </string>
 				<string> "range/min" </string>
 				<string> "range/max" </string>
 				<string> "range/step" </string>
@@ -49,9 +51,9 @@
 			<string> "node_count" </string>
 			<int> 4 </int>
 			<string> "nodes" </string>
-			<int_array  len="134"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 19, 12, 6, 13, 6, 2, 7, 3, 8, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 22, 12, 23, 13, 24, 13, 25, 14, 0, 0, 0, 27, 26, -1, 13, 12, 6, 13, 15, 2, 7, 3, 16, 28, 17, 4, 1, 5, 2, 6, 3, 7, 3, 14, 9, 29, 1, 22, 18, 30, 1, 0, 0, 0, 27, 31, -1, 13, 12, 6, 13, 19, 2, 7, 3, 20, 28, 21, 4, 1, 5, 2, 6, 3, 7, 3, 14, 9, 29, 1, 22, 22, 30, 1, 0 </int_array>
+			<int_array  len="138"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 21, 12, 6, 13, 6, 2, 7, 3, 8, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 12, 18, 13, 19, 13, 20, 13, 21, 12, 22, 1, 23, 1, 24, 14, 25, 15, 26, 15, 27, 16, 0, 0, 0, 29, 28, -1, 13, 12, 6, 13, 17, 2, 7, 3, 18, 30, 19, 4, 1, 5, 2, 6, 3, 7, 3, 14, 9, 31, 1, 24, 20, 32, 1, 0, 0, 0, 29, 33, -1, 13, 12, 6, 13, 21, 2, 7, 3, 22, 30, 23, 4, 1, 5, 2, 6, 3, 7, 3, 14, 9, 31, 1, 24, 24, 32, 1, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="23" shared="false">
+			<array  len="25" shared="false">
 				<real> 40 </real>
 				<bool> False </bool>
 				<bool> True </bool>
@@ -59,7 +61,7 @@
 				<resource  resource_type="Script" path="res://scripts/main_menu.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
@@ -192,6 +194,8 @@
 				<real> 256 </real>
 				<real> 160 </real>
 				<resource  resource_type="Font" path="res://resources/fira_sans.fnt">  </resource>
+				<color> 0.501961, 1, 1, 1 </color>
+				<color> 1, 1, 1, 1 </color>
 				<real> 0 </real>
 				<real> 1 </real>
 				<string> "Libre Pinball" </string>

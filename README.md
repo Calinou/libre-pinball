@@ -23,3 +23,5 @@ Controls
 - `Space Bar`: use launcher
 - `Left Arrow`: control left paddle
 - `Right Arrow`: control right paddle
+- `F2`: restart game
+- `F5`: show frames per second

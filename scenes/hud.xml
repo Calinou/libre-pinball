@@ -9,7 +9,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="29">
+			<string_array  len="33">
 				<string> "HUD" </string>
 				<string> "Control" </string>
 				<string> "margin/right" </string>
@@ -35,17 +35,21 @@
 				<string> "percent_visible" </string>
 				<string> "Game Over" </string>
 				<string> "visibility/visible" </string>
+				<string> "custom_colors/font_color" </string>
 				<string> "text" </string>
 				<string> "align" </string>
 				<string> "valign" </string>
 				<string> "uppercase" </string>
+				<string> "Restart" </string>
+				<string> "Score" </string>
+				<string> "Lives" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 3 </int>
+			<int> 6 </int>
 			<string> "nodes" </string>
-			<int_array  len="107"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 16, 12, 6, 13, 6, 2, 7, 3, 8, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 22, 12, 0, 0, 0, 11, 23, -1, 19, 24, 1, 2, 13, 3, 14, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 25, 15, 26, 16, 27, 16, 28, 2, 22, 12, 0 </int_array>
+			<int_array  len="238"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 16, 12, 6, 13, 7, 2, 8, 3, 0, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 22, 12, 0, 0, 0, 11, 23, -1, 20, 24, 1, 2, 13, 3, 14, 4, 2, 5, 2, 6, 3, 14, 9, 25, 15, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 26, 16, 27, 17, 28, 17, 29, 2, 22, 11, 0, 2, 0, 11, 30, -1, 20, 13, 0, 2, 13, 3, 18, 4, 2, 5, 2, 6, 3, 14, 9, 25, 19, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 26, 20, 27, 17, 28, 17, 29, 2, 22, 11, 0, 0, 0, 11, 31, -1, 18, 13, 6, 2, 13, 3, 8, 4, 2, 5, 2, 6, 3, 14, 9, 25, 21, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 27, 17, 28, 17, 22, 12, 0, 0, 0, 11, 32, -1, 16, 13, 22, 2, 23, 3, 24, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 27, 3, 22, 12, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="17" shared="false">
+			<array  len="25" shared="false">
 				<real> 40 </real>
 				<bool> False </bool>
 				<bool> True </bool>
@@ -53,13 +57,13 @@
 				<resource  resource_type="Script" path="res://scripts/hud.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -17, -79 </vector2>
+							<vector2> -242.333, -79 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
@@ -182,17 +186,25 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<real> 10 </real>
-				<real> 50 </real>
-				<real> 32 </real>
+				<real> 20 </real>
+				<real> 18 </real>
+				<real> 60 </real>
 				<resource  resource_type="Font" path="res://resources/fira_sans.fnt">  </resource>
 				<real> 0 </real>
 				<real> 1 </real>
 				<real> -1 </real>
 				<real> 360 </real>
 				<real> 640 </real>
+				<color> 1, 0.501961, 0, 1 </color>
 				<string> "game_over" </string>
 				<int> 1 </int>
+				<real> 680 </real>
+				<color> 1, 1, 1, 1 </color>
+				<string> "game_over_press_key_to_restart" </string>
+				<color> 1, 1, 0.25098, 1 </color>
+				<real> 600 </real>
+				<real> 320 </real>
+				<real> 622 </real>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>

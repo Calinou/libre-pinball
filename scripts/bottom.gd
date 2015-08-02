@@ -3,17 +3,15 @@
 
 extends Node2D
 
+var global
 var ball
 var hud
 
-var lifes = 2
 var timer = 0
 var pos_x
 var pos_y
 
 func _ready():
-	
-
 	set_fixed_process(true)
 
 func _fixed_process(delta):
@@ -24,13 +22,20 @@ func _fixed_process(delta):
 		timer = 10
 
 func _on_Bottom_Area_body_enter(area):
+	global = get_node("/root/Global")
 	ball = get_node("../Ball/RigidBody2D")
-	if timer >= 10 and lifes > 0:
-		lifes -= 1
+
+	global.lives -= 1
+	# "Life lost" sound:
+	get_node("../Left Flipper/SamplePlayer").play("life_lost")
+
+	if timer >= 10 and global.lives > 0:
 		# Reset ball position and velocity:
-		ball.set_global_pos(Vector2(64, 64))
+		ball.set_global_pos(Vector2(338, 530)) # Ball position on Table 1:
 		ball.set_linear_velocity(Vector2(0, 0))
-		print(tr("life_lost") + " " + str(lifes))
+		ball.set_angular_velocity(0)
+		print(tr("life_lost") + " " + str(global.lives))
+
 	elif timer >= 10:
 		hud = get_node("../HUD/Game Over")
 		hud.show()
