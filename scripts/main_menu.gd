@@ -3,11 +3,16 @@
 
 extends Control
 
+var global = get_node("/root/Global")
+
 func _ready():
-	print("Main menu loaded.")
+	global = get_node("/root/Global")
+	print(tr("main_menu_loaded"))
+	global.table_window_title("Main Menu")
 
 func _on_Play_Button_pressed():
 	get_tree().change_scene("res://scenes/table_1.xml")
 
 func _on_Quit_Button_pressed():
+	global = get_node("/root/Global")
 	get_node("/root/Global").quit()

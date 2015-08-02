@@ -2,6 +2,3 @@
 # See LICENSE.md for more information.
 
 extends RigidBody2D
-
-func _ready():
-	pass

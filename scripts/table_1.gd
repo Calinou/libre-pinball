@@ -3,5 +3,10 @@
 
 extends Node2D
 
+var global
+var table_name = "Test"
+
 func _ready():
-	print("Table 1 loaded.")
+	global = get_node("/root/Global")
+	print(tr("table_loaded").replace("%s", table_name))
+	global.table_window_title("Test")

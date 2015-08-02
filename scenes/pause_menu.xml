@@ -5,11 +5,11 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 2 </int>
+			<int> 4 </int>
 			<string> "conns" </string>
-			<int_array  len="12"> 				2, 0, 37, 36, 2, 0, 3, 0, 37, 38, 2, 0 </int_array>
+			<int_array  len="24"> 				2, 0, 40, 39, 2, 0, 3, 0, 40, 41, 2, 0, 4, 0, 40, 42, 2, 0, 5, 0, 40, 43, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="39">
+			<string_array  len="44">
 				<string> "Pause Menu" </string>
 				<string> "Control" </string>
 				<string> "process/pause_mode" </string>
@@ -46,16 +46,21 @@
 				<string> "Quit Button" </string>
 				<string> "anchor/right" </string>
 				<string> "anchor/bottom" </string>
+				<string> "Restart Button" </string>
+				<string> "Main Menu Button" </string>
+				<string> "clip_text" </string>
 				<string> "_on_Resume_Button_pressed" </string>
 				<string> "pressed" </string>
 				<string> "_on_Quit_Button_pressed" </string>
+				<string> "_on_Restart_Button_pressed" </string>
+				<string> "_on_Main_Menu_Button_pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 4 </int>
+			<int> 6 </int>
 			<string> "nodes" </string>
-			<int_array  len="142"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 0, 8, 0, 9, 4, 10, 5, 0, 0, 0, 12, 11, -1, 20, 13, 6, 14, 7, 3, 8, 4, 9, 5, 3, 6, 3, 7, 0, 15, 10, 16, 11, 17, 12, 18, 12, 19, 12, 20, 11, 21, 2, 22, 2, 23, 13, 24, 14, 25, 14, 26, 3, 27, 15, 0, 0, 0, 29, 28, -1, 13, 13, 6, 14, 16, 3, 8, 4, 17, 30, 18, 5, 2, 6, 3, 7, 0, 8, 0, 15, 10, 31, 2, 23, 19, 32, 2, 0, 0, 0, 29, 33, -1, 15, 34, 14, 35, 14, 13, 6, 14, 20, 3, 21, 4, 22, 30, 23, 5, 2, 6, 3, 7, 0, 8, 0, 15, 10, 31, 2, 23, 24, 32, 2, 0 </int_array>
+			<int_array  len="218"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 0, 8, 0, 9, 4, 10, 5, 0, 0, 0, 12, 11, -1, 20, 13, 6, 14, 7, 3, 8, 4, 6, 5, 3, 6, 3, 7, 0, 15, 9, 16, 10, 17, 11, 18, 11, 19, 11, 20, 10, 21, 2, 22, 2, 23, 12, 24, 13, 25, 13, 26, 3, 27, 14, 0, 0, 0, 29, 28, -1, 13, 13, 6, 14, 15, 3, 8, 4, 16, 30, 17, 5, 2, 6, 3, 7, 0, 8, 0, 15, 9, 31, 2, 23, 18, 32, 2, 0, 0, 0, 29, 33, -1, 15, 34, 13, 35, 13, 13, 6, 14, 19, 3, 20, 4, 21, 30, 22, 5, 2, 6, 3, 7, 0, 8, 0, 15, 9, 31, 2, 23, 23, 32, 2, 0, 0, 0, 29, 36, -1, 15, 34, 13, 35, 13, 13, 6, 14, 8, 3, 20, 4, 24, 30, 25, 5, 2, 6, 3, 7, 0, 8, 0, 15, 9, 31, 2, 23, 26, 32, 2, 0, 0, 0, 29, 37, -1, 16, 34, 13, 35, 13, 13, 6, 14, 27, 3, 20, 4, 28, 30, 29, 5, 2, 6, 3, 7, 0, 8, 0, 15, 9, 31, 2, 23, 30, 32, 2, 38, 3, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="25" shared="false">
+			<array  len="31" shared="false">
 				<int> 2 </int>
 				<real> 40 </real>
 				<bool> False </bool>
@@ -69,7 +74,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -424, -55.7562 </vector2>
+							<vector2> 0, -55.7562 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
@@ -193,24 +198,30 @@
 					</dictionary>
 				</dictionary>
 				<real> 96 </real>
-				<real> 128 </real>
+				<real> 32 </real>
 				<real> 256 </real>
-				<real> 192 </real>
 				<resource  resource_type="Font" path="res://resources/fira_sans.fnt">  </resource>
 				<real> 0 </real>
 				<real> 1 </real>
 				<string> "pause" </string>
 				<int> 1 </int>
 				<real> -1 </real>
-				<real> 288 </real>
-				<real> 352 </real>
+				<real> 128 </real>
+				<real> 192 </real>
 				<string> "resume_tooltip" </string>
 				<string> "resume" </string>
-				<real> 384 </real>
+				<real> 512 </real>
 				<real> -216 </real>
-				<real> -408 </real>
+				<real> -536 </real>
 				<string> "quit_tooltip" </string>
 				<string> "quit" </string>
+				<real> -280 </real>
+				<string> "restart_tooltip" </string>
+				<string> "restart" </string>
+				<real> 384 </real>
+				<real> -408 </real>
+				<string> "go_to_main_menu_tooltip" </string>
+				<string> "go_to_main_menu" </string>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>

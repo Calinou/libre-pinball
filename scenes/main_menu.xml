@@ -7,9 +7,9 @@
 			<string> "conn_count" </string>
 			<int> 2 </int>
 			<string> "conns" </string>
-			<int_array  len="12"> 				1, 0, 21, 20, 2, 0, 2, 0, 21, 22, 2, 0 </int_array>
+			<int_array  len="12"> 				2, 0, 33, 32, 2, 0, 3, 0, 33, 34, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="23">
+			<string_array  len="35">
 				<string> "Main Menu" </string>
 				<string> "Control" </string>
 				<string> "margin/right" </string>
@@ -20,14 +20,26 @@
 				<string> "size_flags/vertical" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "Play Button" </string>
-				<string> "Button" </string>
+				<string> "Title" </string>
+				<string> "Label" </string>
 				<string> "margin/left" </string>
 				<string> "margin/top" </string>
-				<string> "hint/tooltip" </string>
 				<string> "custom_fonts/font" </string>
-				<string> "toggle_mode" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "rounded_values" </string>
 				<string> "text" </string>
+				<string> "align" </string>
+				<string> "valign" </string>
+				<string> "percent_visible" </string>
+				<string> "Play Button" </string>
+				<string> "Button" </string>
+				<string> "hint/tooltip" </string>
+				<string> "toggle_mode" </string>
 				<string> "flat" </string>
 				<string> "Quit Button" </string>
 				<string> "_on_Play_Button_pressed" </string>
@@ -35,11 +47,11 @@
 				<string> "_on_Quit_Button_pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 3 </int>
+			<int> 4 </int>
 			<string> "nodes" </string>
-			<int_array  len="89"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 13, 12, 6, 13, 7, 2, 8, 3, 9, 14, 10, 4, 1, 5, 2, 6, 3, 7, 3, 15, 11, 16, 1, 17, 12, 18, 1, 0, 0, 0, 11, 19, -1, 13, 12, 6, 13, 13, 2, 8, 3, 14, 14, 15, 4, 1, 5, 2, 6, 3, 7, 3, 15, 11, 16, 1, 17, 16, 18, 1, 0 </int_array>
+			<int_array  len="134"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 19, 12, 6, 13, 6, 2, 7, 3, 8, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 22, 12, 23, 13, 24, 13, 25, 14, 0, 0, 0, 27, 26, -1, 13, 12, 6, 13, 15, 2, 7, 3, 16, 28, 17, 4, 1, 5, 2, 6, 3, 7, 3, 14, 9, 29, 1, 22, 18, 30, 1, 0, 0, 0, 27, 31, -1, 13, 12, 6, 13, 19, 2, 7, 3, 20, 28, 21, 4, 1, 5, 2, 6, 3, 7, 3, 14, 9, 29, 1, 22, 22, 30, 1, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="17" shared="false">
+			<array  len="23" shared="false">
 				<real> 40 </real>
 				<bool> False </bool>
 				<bool> True </bool>
@@ -177,11 +189,17 @@
 					</dictionary>
 				</dictionary>
 				<real> 96 </real>
-				<real> 224 </real>
 				<real> 256 </real>
+				<real> 160 </real>
+				<resource  resource_type="Font" path="res://resources/fira_sans.fnt">  </resource>
+				<real> 0 </real>
+				<real> 1 </real>
+				<string> "Libre Pinball" </string>
+				<int> 1 </int>
+				<real> -1 </real>
+				<real> 224 </real>
 				<real> 288 </real>
 				<string> "play_tooltip" </string>
-				<resource  resource_type="Font" path="res://resources/fira_sans.fnt">  </resource>
 				<string> "play" </string>
 				<real> 352 </real>
 				<real> 416 </real>

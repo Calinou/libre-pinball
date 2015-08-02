@@ -1,92 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="1.1" version_name="Godot Engine v1.1.stable.custom_build">
-	<ext_resource path="res://scripts/ball.gd" type="Script"></ext_resource>
-	<ext_resource path="res://media/images/ball.png" type="Texture"></ext_resource>
-	<ext_resource path="res://media/images/light.png" type="Texture"></ext_resource>
-	<resource type="CircleShape2D" path="local://1">
+<resource_file type="PackedScene" subresource_count="3" version="1.1" version_name="Godot Engine v1.1.stable.custom_build">
+	<ext_resource path="res://scripts/bottom.gd" type="Script"></ext_resource>
+	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<real name="radius"> 10 </real>
+		<vector2_array name="points" len="4"> 			12.8, 670.4, 12.8, 650.4, 372.8, 650.4, 372.8, 670.4 </vector2_array>
 
 	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 0 </int>
+			<int> 1 </int>
 			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<int_array  len="6"> 				1, 0, 22, 21, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="49">
-				<string> "Ball" </string>
+			<string_array  len="23">
+				<string> "Bottom" </string>
 				<string> "Node2D" </string>
+				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "RigidBody2D" </string>
+				<string> "Bottom Area" </string>
+				<string> "Area2D" </string>
 				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
-				<string> "collision/layers" </string>
-				<string> "collision/mask" </string>
-				<string> "mode" </string>
-				<string> "mass" </string>
-				<string> "friction" </string>
-				<string> "bounce" </string>
-				<string> "gravity_scale" </string>
-				<string> "custom_integrator" </string>
-				<string> "continuous_cd" </string>
-				<string> "contacts_reported" </string>
-				<string> "contact_monitor" </string>
-				<string> "sleeping" </string>
-				<string> "can_sleep" </string>
-				<string> "velocity/linear" </string>
-				<string> "velocity/angular" </string>
-				<string> "damp_override/linear" </string>
-				<string> "damp_override/angular" </string>
-				<string> "script/script" </string>
-				<string> "Sprite" </string>
+				<string> "gravity_vec" </string>
+				<string> "gravity" </string>
+				<string> "linear_damp" </string>
+				<string> "angular_damp" </string>
+				<string> "Bottom Collision" </string>
+				<string> "CollisionPolygon2D" </string>
+				<string> "transform/pos" </string>
 				<string> "transform/scale" </string>
-				<string> "texture" </string>
-				<string> "CollisionShape2D" </string>
-				<string> "shape" </string>
+				<string> "build_mode" </string>
+				<string> "polygon" </string>
 				<string> "trigger" </string>
-				<string> "Light2D" </string>
-				<string> "enabled" </string>
-				<string> "offset" </string>
-				<string> "scale" </string>
-				<string> "color" </string>
-				<string> "energy" </string>
-				<string> "range/height" </string>
-				<string> "range/z_min" </string>
-				<string> "range/z_max" </string>
-				<string> "range/layer_min" </string>
-				<string> "range/layer_max" </string>
-				<string> "range/item_mask" </string>
-				<string> "shadow/enabled" </string>
-				<string> "shadow/color" </string>
-				<string> "shadow/buffer_size" </string>
-				<string> "shadow/esm_multiplier" </string>
-				<string> "shadow/item_mask" </string>
+				<string> "_on_Bottom_Area_body_enter" </string>
+				<string> "body_enter" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 5 </int>
+			<int> 3 </int>
 			<string> "nodes" </string>
-			<int_array  len="125"> 				-1, -1, 1, 0, -1, 1, 2, 0, 0, 0, 0, 3, 3, -1, 22, 4, 1, 5, 2, 6, 3, 7, 1, 8, 4, 9, 4, 10, 5, 11, 6, 12, 6, 13, 7, 14, 8, 15, 1, 16, 5, 17, 5, 18, 1, 19, 1, 20, 9, 21, 10, 22, 11, 23, 12, 24, 12, 25, 13, 0, 1, 0, 26, 26, -1, 2, 27, 14, 28, 15, 0, 1, 0, 29, 29, -1, 2, 30, 2, 31, 1, 0, 1, 0, 32, 32, -1, 18, 33, 9, 28, 16, 34, 10, 35, 17, 36, 18, 37, 19, 10, 5, 38, 6, 39, 20, 40, 21, 41, 5, 42, 5, 43, 4, 44, 9, 45, 22, 46, 23, 47, 24, 48, 4, 0 </int_array>
+			<int_array  len="51"> 				-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 0, 0, 5, 4, -1, 8, 6, 2, 7, 3, 8, 4, 9, 2, 10, 5, 11, 6, 12, 7, 13, 8, 0, 1, 0, 15, 14, -1, 5, 16, 9, 17, 10, 18, 11, 19, 12, 20, 2, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="25" shared="false">
+			<array  len="13" shared="false">
+				<resource  resource_type="Script" path="res://scripts/bottom.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -357.643, -213.297 </vector2>
+							<vector2> -11.7443, -119.68 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
 							<vector2> 0, 0 </vector2>
 							<string> "snap_pixel" </string>
-							<bool> False </bool>
+							<bool> True </bool>
 							<string> "snap_relative" </string>
 							<bool> False </bool>
 							<string> "snap_rotation" </string>
@@ -98,9 +71,9 @@
 							<string> "snap_show_grid" </string>
 							<bool> True </bool>
 							<string> "snap_step" </string>
-							<vector2> 16, 16 </vector2>
+							<vector2> 20, 20 </vector2>
 							<string> "zoom" </string>
-							<real> 1.458955 </real>
+							<real> 0.814506 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -136,9 +109,9 @@
 									<string> "use_orthogonal" </string>
 									<bool> False </bool>
 									<string> "x_rot" </string>
-									<real> 0.3 </real>
+									<real> 0.325 </real>
 									<string> "y_rot" </string>
-									<real> 3.100002 </real>
+									<real> 1.424998 </real>
 								</dictionary>
 								<dictionary  shared="false">
 									<string> "distance" </string>
@@ -203,30 +176,17 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<bool> False </bool>
-				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
-				<int> 1 </int>
-				<int> 0 </int>
-				<real> 1 </real>
-				<real> 0.25 </real>
-				<real> 4 </real>
 				<bool> True </bool>
-				<vector2> 0, 0 </vector2>
-				<real> 0 </real>
-				<real> -1 </real>
-				<resource  resource_type="Script" path="res://scripts/ball.gd">  </resource>
-				<vector2> 0.15, 0.15 </vector2>
-				<resource  resource_type="Texture" path="res://media/images/ball.png">  </resource>
-				<resource  resource_type="Texture" path="res://media/images/light.png">  </resource>
-				<real> 0.5 </real>
-				<color> 1, 1, 1, 1 </color>
-				<real> 2 </real>
-				<int> -1024 </int>
-				<int> 1024 </int>
-				<color> 0, 0, 0, 0 </color>
-				<int> 2048 </int>
-				<real> 80 </real>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 1, -0, 0, 1, -12.8, 9.59985 </matrix32>
+				<vector2> 0, 1 </vector2>
+				<real> 98 </real>
+				<real> 0.1 </real>
+				<real> 1 </real>
+				<vector2> -12.8, 9.59985 </vector2>
+				<vector2> 1, 1 </vector2>
+				<int> 0 </int>
+				<vector2_array  len="4"> 					12.8, 670.4, 372.8, 670.4, 372.8, 650.4, 12.8, 650.4 </vector2_array>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>

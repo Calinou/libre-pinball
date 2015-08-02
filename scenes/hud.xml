@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="1.1" version_name="Godot Engine v1.1.stable.custom_build">
-	<ext_resource path="res://scripts/ball.gd" type="Script"></ext_resource>
-	<ext_resource path="res://media/images/ball.png" type="Texture"></ext_resource>
-	<ext_resource path="res://media/images/light.png" type="Texture"></ext_resource>
-	<resource type="CircleShape2D" path="local://1">
-		<real name="custom_solver_bias"> 0 </real>
-		<real name="radius"> 10 </real>
-
-	</resource>
+<resource_file type="PackedScene" subresource_count="3" version="1.1" version_name="Godot Engine v1.1.stable.custom_build">
+	<ext_resource path="res://scripts/hud.gd" type="Script"></ext_resource>
+	<ext_resource path="res://resources/fira_sans.fnt" type="Font"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
@@ -15,63 +9,48 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="49">
-				<string> "Ball" </string>
-				<string> "Node2D" </string>
-				<string> "__meta__" </string>
-				<string> "RigidBody2D" </string>
-				<string> "input/pickable" </string>
-				<string> "shapes/0/shape" </string>
-				<string> "shapes/0/transform" </string>
-				<string> "shapes/0/trigger" </string>
-				<string> "collision/layers" </string>
-				<string> "collision/mask" </string>
-				<string> "mode" </string>
-				<string> "mass" </string>
-				<string> "friction" </string>
-				<string> "bounce" </string>
-				<string> "gravity_scale" </string>
-				<string> "custom_integrator" </string>
-				<string> "continuous_cd" </string>
-				<string> "contacts_reported" </string>
-				<string> "contact_monitor" </string>
-				<string> "sleeping" </string>
-				<string> "can_sleep" </string>
-				<string> "velocity/linear" </string>
-				<string> "velocity/angular" </string>
-				<string> "damp_override/linear" </string>
-				<string> "damp_override/angular" </string>
+			<string_array  len="29">
+				<string> "HUD" </string>
+				<string> "Control" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
 				<string> "script/script" </string>
-				<string> "Sprite" </string>
-				<string> "transform/scale" </string>
-				<string> "texture" </string>
-				<string> "CollisionShape2D" </string>
-				<string> "shape" </string>
-				<string> "trigger" </string>
-				<string> "Light2D" </string>
-				<string> "enabled" </string>
-				<string> "offset" </string>
-				<string> "scale" </string>
-				<string> "color" </string>
-				<string> "energy" </string>
-				<string> "range/height" </string>
-				<string> "range/z_min" </string>
-				<string> "range/z_max" </string>
-				<string> "range/layer_min" </string>
-				<string> "range/layer_max" </string>
-				<string> "range/item_mask" </string>
-				<string> "shadow/enabled" </string>
-				<string> "shadow/color" </string>
-				<string> "shadow/buffer_size" </string>
-				<string> "shadow/esm_multiplier" </string>
-				<string> "shadow/item_mask" </string>
+				<string> "__meta__" </string>
+				<string> "Frames per Second" </string>
+				<string> "Label" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "custom_fonts/font" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "rounded_values" </string>
+				<string> "percent_visible" </string>
+				<string> "Game Over" </string>
+				<string> "visibility/visible" </string>
+				<string> "text" </string>
+				<string> "align" </string>
+				<string> "valign" </string>
+				<string> "uppercase" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 5 </int>
+			<int> 3 </int>
 			<string> "nodes" </string>
-			<int_array  len="125"> 				-1, -1, 1, 0, -1, 1, 2, 0, 0, 0, 0, 3, 3, -1, 22, 4, 1, 5, 2, 6, 3, 7, 1, 8, 4, 9, 4, 10, 5, 11, 6, 12, 6, 13, 7, 14, 8, 15, 1, 16, 5, 17, 5, 18, 1, 19, 1, 20, 9, 21, 10, 22, 11, 23, 12, 24, 12, 25, 13, 0, 1, 0, 26, 26, -1, 2, 27, 14, 28, 15, 0, 1, 0, 29, 29, -1, 2, 30, 2, 31, 1, 0, 1, 0, 32, 32, -1, 18, 33, 9, 28, 16, 34, 10, 35, 17, 36, 18, 37, 19, 10, 5, 38, 6, 39, 20, 40, 21, 41, 5, 42, 5, 43, 4, 44, 9, 45, 22, 46, 23, 47, 24, 48, 4, 0 </int_array>
+			<int_array  len="107"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 0, 4, 1, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 16, 12, 6, 13, 6, 2, 7, 3, 8, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 22, 12, 0, 0, 0, 11, 23, -1, 19, 24, 1, 2, 13, 3, 14, 4, 2, 5, 2, 6, 3, 14, 9, 15, 10, 16, 11, 17, 11, 18, 11, 19, 10, 20, 1, 21, 1, 25, 15, 26, 16, 27, 16, 28, 2, 22, 12, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="25" shared="false">
+			<array  len="17" shared="false">
+				<real> 40 </real>
+				<bool> False </bool>
+				<bool> True </bool>
+				<int> 2 </int>
+				<resource  resource_type="Script" path="res://scripts/hud.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "Script" </string>
@@ -80,7 +59,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -357.643, -213.297 </vector2>
+							<vector2> -17, -79 </vector2>
 							<string> "snap_grid" </string>
 							<bool> True </bool>
 							<string> "snap_offset" </string>
@@ -98,9 +77,9 @@
 							<string> "snap_show_grid" </string>
 							<bool> True </bool>
 							<string> "snap_step" </string>
-							<vector2> 16, 16 </vector2>
+							<vector2> 20, 20 </vector2>
 							<string> "zoom" </string>
-							<real> 1.458955 </real>
+							<real> 1 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -136,9 +115,9 @@
 									<string> "use_orthogonal" </string>
 									<bool> False </bool>
 									<string> "x_rot" </string>
-									<real> 0.3 </real>
+									<real> 0 </real>
 									<string> "y_rot" </string>
-									<real> 3.100002 </real>
+									<real> 0 </real>
 								</dictionary>
 								<dictionary  shared="false">
 									<string> "distance" </string>
@@ -203,30 +182,17 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<bool> False </bool>
-				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
-				<int> 1 </int>
-				<int> 0 </int>
-				<real> 1 </real>
-				<real> 0.25 </real>
-				<real> 4 </real>
-				<bool> True </bool>
-				<vector2> 0, 0 </vector2>
+				<real> 10 </real>
+				<real> 50 </real>
+				<real> 32 </real>
+				<resource  resource_type="Font" path="res://resources/fira_sans.fnt">  </resource>
 				<real> 0 </real>
+				<real> 1 </real>
 				<real> -1 </real>
-				<resource  resource_type="Script" path="res://scripts/ball.gd">  </resource>
-				<vector2> 0.15, 0.15 </vector2>
-				<resource  resource_type="Texture" path="res://media/images/ball.png">  </resource>
-				<resource  resource_type="Texture" path="res://media/images/light.png">  </resource>
-				<real> 0.5 </real>
-				<color> 1, 1, 1, 1 </color>
-				<real> 2 </real>
-				<int> -1024 </int>
-				<int> 1024 </int>
-				<color> 0, 0, 0, 0 </color>
-				<int> 2048 </int>
-				<real> 80 </real>
+				<real> 360 </real>
+				<real> 640 </real>
+				<string> "game_over" </string>
+				<int> 1 </int>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
