@@ -3,7 +3,10 @@
 
 extends KinematicBody2D
 
+# Rotation of the paddle:
 var rotation = 0.3
+
+# Variable to make the sound play only once per key press:
 var sound_to_play = true
 
 func _ready():
@@ -11,14 +14,14 @@ func _ready():
 	set_process_input(true)
 
 func _fixed_process(delta):
-	# Cap rotation values
+	# Cap rotation values:
 	if rotation >= 0.3:
 		rotation = 0.3
 
 	if rotation <= -0.3:
 		rotation = -0.3
 
-	# When `paddle_right` is pressed, start rotating and play sound once
+	# When `paddle_right` is pressed, start rotating and play sound once:
 	if Input.is_action_pressed("paddle_right"):
 		rotation -= 0.06
 		if sound_to_play:
@@ -29,4 +32,3 @@ func _fixed_process(delta):
 		sound_to_play = true
 
 	set_rot(rotation)
-

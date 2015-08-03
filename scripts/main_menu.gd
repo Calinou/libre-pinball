@@ -11,6 +11,7 @@ func _ready():
 	global.table_window_title("Main Menu")
 
 func _on_Play_Button_pressed():
+	# TODO: Level selection, several tables
 	get_tree().change_scene("res://scenes/table_1.xml")
 
 func _on_Quit_Button_pressed():

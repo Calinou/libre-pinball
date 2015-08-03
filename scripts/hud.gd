@@ -15,10 +15,12 @@ func _fixed_process(delta):
 	global = get_node("/root/Global")
 	var fps = OS.get_frames_per_second()
 	if show_fps:
+		# Show FPS counter:
 		get_node("Frames per Second").set_text(str(fps) + " FPS")
 	else:
+		# Show nothing:
 		get_node("Frames per Second").set_text("")
-	
+
 	get_node("Score").set_text(str(global.score))
 	get_node("Lives").set_text(str(global.lives))
 

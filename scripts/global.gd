@@ -3,8 +3,9 @@
 
 extends Node
 
-# Initial score compensation (7 bumpers):
+# HACK: Initial score compensation (7 bumpers):
 var score = -700
+
 # 3 lives:
 var lives = 3
 
@@ -19,10 +20,11 @@ func _input(event):
 	if Input.is_action_pressed("restart_game"):
 		restart()
 
-# Function to prepend the window title with the current table:
+# Function to prepend the window title with the current table (or main menu):
 func table_window_title(name):
 	OS.set_window_title(name + " - Libre Pinball")
 
+# Resets the game state, used when going back to main menu and restarting:
 func reset_game_state():
 	score = -700
 	lives = 3

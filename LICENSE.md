@@ -2,8 +2,7 @@
 - For media, please see the `LICENSE.md` files inside the `media/` directory.
 - You can see copies of the licenses used in the `doc/licenses/` directory.
 
-The MIT License (MIT)
-=====================
+# The MIT License (MIT)
 
 Copyright (c) 2015 Calinou
 
