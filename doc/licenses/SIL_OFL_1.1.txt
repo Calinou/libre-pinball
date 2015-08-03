@@ -1,5 +1,4 @@
 SIL OFL 1.1
-===========
 
 Version 1.1 - 26 February 2007
 
