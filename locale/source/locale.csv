@@ -1,0 +1,17 @@
+id,en,fr,de,es
+play,Play,Jouer,Spielen,Jugar
+play_tooltip,Click to play.,Cliquez pour jouer.,Zum Spielen klicken.,Click para jugar.
+quit,Quit,Quitter,Beenden,Cerrar
+quit_tooltip,Quits the game.,Quitte le jeu.,Verlässt das Spiel.,Cerrar el juego.
+pause,Pause,Pause,Pause,Pause
+resume,Resume,Continuer,Weiter,Resumir
+resume_tooltip,Resumes the game.,Continue la partie.,Fährt das Spiel fort.,Resume el juego.
+restart,Restart,Recommencer,Neustart,Volver a empezar
+restart_tooltip,Restarts the game.,Recommence la partie.,Startet ein neues Spiel.,Empieza de nuevo el juego.
+go_to_main_menu,Main Menu,Menu principal,Hauptmemü,Menú principal
+go_to_main_menu_tooltip,Go to Main Menu.,Va au menu principal.,Zum Hauptmenü.,Ir a Menú principal.
+life_lost,Player lost a life. Lifes remaining:,Le joueur a perdu une vie. Nombre de vies restantes:,Leben verloren. Verbleibend:,Jugador pierde una vida. Vidas restantes:
+game_over,Game over.,Partie terminée.,Game over.,Fin del Juego.
+game_over_press_key_to_restart,Press F2 to restart.,Appuyez sur F2 pour recommencer.,Für neuen Versuch F2 drücken.,Presiona F2 para volver a empezar.
+main_menu_loaded,Main menu loaded.,Menu principal chargé.,Hauptmenü geladen.,Menú principal cargado.
+table_loaded,Table '%s' loaded.,Table '%s' chargée.,Spielfeld '%s' geladen.,Tablas '%s' cargadas.
