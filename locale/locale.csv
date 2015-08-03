@@ -1,17 +1,17 @@
-id,en,fr
-play,Play,Jouer
-play_tooltip,Click to play.,Cliquez pour jouer.
-quit,Quit,Quitter
-quit_tooltip,Quits the game.,Quitte le jeu.
-pause,Pause,Pause
-resume,Resume,Continuer
-resume_tooltip,Resumes the game.,Continue la partie.
-restart,Restart,Recommencer
-restart_tooltip,Restarts the game.,Recommence la partie.
-go_to_main_menu,Main Menu,Menu principal
-go_to_main_menu_tooltip,Go to Main Menu.,Va au menu principal.
-life_lost,Player lost a life. Lifes remaining:,Le joueur a perdu une vie. Nombre de vies restantes:
-game_over,Game over.,Partie terminée.
-game_over_press_key_to_restart,Press F2 to restart.,Appuyez sur F2 pour recommencer.
-main_menu_loaded,Main menu loaded.,Menu principal chargé.
-table_loaded,Table '%s' loaded.,Table '%s' chargée.
+id,en,fr,de
+play,Play,Jouer,Spielen
+play_tooltip,Click to play.,Cliquez pour jouer.,Zum Spielen klicken.
+quit,Quit,Quitter,Beenden
+quit_tooltip,Quits the game.,Quitte le jeu.,Verlässt das Spiel
+pause,Pause,Pause,Pause
+resume,Resume,Continuer,Weiter
+resume_tooltip,Resumes the game.,Continue la partie.,Fährt das Spiel fort
+restart,Restart,Recommencer,Neustart
+restart_tooltip,Restarts the game.,Recommence la partie.,Startet ein neues Spiel
+go_to_main_menu,Main Menu,Menu principal,Hauptmemü
+go_to_main_menu_tooltip,Go to Main Menu.,Va au menu principal.,Zum Hauptmenü
+life_lost,Player lost a life. Lifes remaining:,Le joueur a perdu une vie. Nombre de vies restantes:,Leben verloren. Verbleibend:
+game_over,Game over.,Partie terminée.,Game over
+game_over_press_key_to_restart,Press F2 to restart.,Appuyez sur F2 pour recommencer.,Für neuen Versuch F2 drücken.
+main_menu_loaded,Main menu loaded.,Menu principal chargé.,Hauptmenü geladen.
+table_loaded,Table '%s' loaded.,Table '%s' chargée.,Spielfeld '%s' geladen.
