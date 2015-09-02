@@ -8,7 +8,7 @@ A free/libre pinball game made with Godot.
 
 - Main menu
 - One playable table with launcher and bumpers
-- Translations (English and French currently)
+- Translations (English, French, German, Spanish)
 
 ## Running
 
@@ -16,8 +16,8 @@ You need a recent build of Godot for this to work properly. 1.1 will not work; t
 
 ## Controls
 
-- `Space Bar`: use launcher
-- `Left Arrow`: control left paddle
-- `Right Arrow`: control right paddle
-- `F2`: restart game
-- `F5`: show frames per second
+- <kbd>Space Bar</kbd>: use launcher
+- <kbd>Left Arrow</kbd>: control left paddle
+- <kbd>Right Arrow</kbd>: control right paddle
+- <kbd>F2</kbd>: restart game
+- <kbd>F5</kbd>: show frames per second
