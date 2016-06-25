@@ -3,7 +3,7 @@
 
 extends Control
 
-var global = get_node("/root/Global")
+onready var global = get_node("/root/Global")
 
 func _ready():
 	global = get_node("/root/Global")
